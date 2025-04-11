@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Sitio en Mantención</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+        }
+        img{
+            max-width: 100%;
+            margin: auto;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            background: #000;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            background-image: url(img/bg-site.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            color: rgb(76, 76, 78);
+        }
+        .wrap-site{
+            display: block;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 0 60px 0;
+        }
+        .cont-info{
+            display: flex;
+            flex-direction: column;
+            background: rgb(255 255 255 / 90%);
+            min-width: 30%;
+            max-width: 650px;
+            width: fit-content;
+            padding: 48px;
+            min-height: 50vh;
+            gap: 40px;
+            
+        }
+        @media screen and (max-width: 650px) {
+            .cont-info{
+                max-width: calc(100% - 32px);
+                padding: 32px 16px;
+                gap: 32px;
+            }
+        }
+        .cont-info .logo-bl{
+            max-height: 50px;
+        }
+        .cont-info .txt-princ{
+            text-align: center;
+            display: block;
+            font-size: clamp(2rem, 1.8148rem + 0.9877vw, 3rem);
+        }
+        .cont-info .list-logos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            max-width: 475px;
+            
+        }
+        .cont-info .list-logos img{
+                max-height: 33px;
+                margin: 8px 16px;
+            }
+        .cont-info .fin-cont{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+            }
+        .rrss{
+            
+        }
+        .rrss img{
+            width: 25px;
+        }
+        .link-mail{
+            color: rgb(76, 76, 78);
+            font-weight: 600;
+        }
+        a:hover, .rrss a:hover{
+            opacity: 0.75;
+        }
+        footer{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: rgb(59, 75, 87);
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        footer img{
+                max-height: 21px;
+            }
+        footer span{
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 0 0 0 32px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap-site">
+        <div class="cont-info">
+            <img src="img/logo-b-logistics.png" alt="Logo Broom Logistics" class="logo-bl">
+            <span class="txt-princ">
+                GREAT THINGS<br>ARE COMING
+            </span>
+            <div class="list-logos">
+                <img src="img/logo-bg-logistics.png" alt="">
+                <img src="img/logo-lcl.png" alt="">
+                <img src="img/logo-pls.png" alt="">
+                <img src="img/logo-broom-frio.png" alt="">
+                <img src="img/logo-aerodomo.png" alt="">
+                <img src="img/logo-maxtend.png" alt="">
+                <img src="img/logo-avatech.png" alt="">
+                <img src="img/logo-zal.png" alt="">
+                <img src="img/logo-sert.png" alt="">
+                <img src="img/logo-conser.png" alt="">
+                <img src="img/logo-byl.png" alt="">
+                <img src="img/logo-werda.png" alt="">
+                <img src="img/logo-trade-fresh.png" alt="">
+            </div>
+            <div class="fin-cont">
+                <div class="rrss">
+                    <a href="https://www.instagram.com/broomgroup/" target=""><img src="img/ico-insta.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/company/broomlogistics" target=""><img src="img/ico-linkedin.svg" alt=""></a>
+                </div>
+                <a class="link-mail" href="mailto:contact@broomlogistics.com">contact@broomlogistics.com</a>
+            </div>
+        </div>
+    <footer>
+        <a href="https://www.broomgroup.com/" target="_blank">
+            <img src="img/logo-broom-group.png" alt="Logo Broom Group">
+        </a>
+        <span>SINCE 1920 | FACING THE FUTURE</span>
+    </footer>
+    </div>
+</body>
+</html>
